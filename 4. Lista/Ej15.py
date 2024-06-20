@@ -23,13 +23,11 @@ from lista import remove, search, show_list
 from entrenadores_pokemon import entrenadores
 from pokemones import pokemons
 
-# Asignar aleatoriamente una lista de pokémons a cada entrenador
 def asignar_pokemons_aleatorios(entrenadores, pokemons, min_pokemons=1, max_pokemons=3):
     for entrenador in entrenadores:
         num_pokemons = random.randint(min_pokemons, max_pokemons)
         entrenador['pokemons'] = random.sample(pokemons, num_pokemons)
 
-# Asignar pokémons aleatorios a los entrenadores
 asignar_pokemons_aleatorios(entrenadores, pokemons)
 
 def cantidad_pokemons_de_entrenador(lista, nombre_entrenador):
