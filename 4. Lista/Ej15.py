@@ -166,7 +166,6 @@ def entrenador_con_pokemon(lista, nombre_entrenador, nombre_pokemon):
     else:
         print(f"Entrenador {nombre_entrenador} no encontrado.")
 
-# Ejecución de funciones con la lista importada
 cantidad_pokemons_de_entrenador(entrenadores, "Ash Ketchum")
 listar_entrenadores_mas_de_tres_torneos(entrenadores)
 pokemon_mayor_nivel_del_mejor_entrenador(entrenadores)
